@@ -1,0 +1,25 @@
+.formContainer {
+  margin: 10px;
+  padding: 15px;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 300px;
+  gap: 10px;
+}
+
+.form-group {
+  padding: 8px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  align-items: center;
+}
+
+input::placeholder {
+  color: red;
+}
+.btn {
+  background-color: rgb(59, 126, 163);
+}
+/* text overfolow */

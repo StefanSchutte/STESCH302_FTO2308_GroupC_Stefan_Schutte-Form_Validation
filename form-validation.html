@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+
+    <link rel="stylesheet" href="stylesheet.css" />
+  </head>
+  <body>
+    <div class="formContainer">
+      <h1>Registration Form</h1>
+      <form
+        target="_blank"
+        action="https://formsubmit.co/2011070287@ufs4life.ac.za"
+        method="POST"
+      >
+        <div class="form-group">
+          <label for="userId">User id:</label>
+          <input
+            type="text"
+            name="User id:"
+            class="form-control"
+            placeholder="Required, length of 5 to 12 characters"
+            min="5"
+            max="12"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="password">Password:</label>
+          <input
+            type="password"
+            name="Password:"
+            class="form-control"
+            placeholder="Required, length of 7 to 12 characters"
+            min="7"
+            max="12"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="name">Name:</label>
+          <input
+            type="text"
+            name="name"
+            class="form-control"
+            placeholder="Required letters only"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="address">Address:</label>
+          <input
+            type="text"
+            name="address"
+            class="form-control"
+            placeholder="Optional"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="country">Country:</label>
+          <select name="country" placeholder="required" required>
+            <option value="south africa">South Africa</option>
+            <option value="america">America</option>
+            <option value="south korea">South Korea</option>
+            <option value="namibia">Namibia</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="zipCOde">ZIP Code:</label>
+          <input
+            type="zipCode"
+            name="zipCode"
+            class="form-control"
+            placeholder="Required, numeric only"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input
+            type="email"
+            name="email"
+            class="form-control"
+            placeholder="Required, valid Email Address only"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="gender">Sex:</label>
+          <label>
+            <input type="radio" name="gender" class="form-control" />Male</label
+          >
+          <label>
+            <input
+              type="radio"
+              name="gender"
+              class="form-control"
+            />Female</label
+          >
+        </div>
+
+        <div>
+          <label for="language">Language:</label>
+          <label>
+            <input
+              type="checkbox"
+              name="gender"
+              class="form-control"
+            />English</label
+          >
+          <label>
+            <input type="checkbox" name="gender" class="form-control" />Non
+            English</label
+          >
+        </div>
+
+        <div class="form-group">
+          <label for="about">About:</label>
+          <textarea
+            placeholder="Optional"
+            class="form-control"
+            name="message"
+            rows="8"
+            required
+          ></textarea>
+        </div>
+
+        <button type="submit" class="btn">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>
