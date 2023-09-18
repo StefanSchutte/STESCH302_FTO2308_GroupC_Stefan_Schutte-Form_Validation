@@ -28,8 +28,8 @@
             name="User id:"
             class="form-control"
             placeholder="Required, length of 5 to 12 characters"
-            min="5"
-            max="12"
+            minlength="5"
+            maxlength="12"
             required
           />
         </div>
@@ -41,8 +41,8 @@
             name="Password:"
             class="form-control"
             placeholder="Required, length of 7 to 12 characters"
-            min="7"
-            max="12"
+            minlength="7"
+            maxlength="12"
             required
           />
         </div>
@@ -82,11 +82,12 @@
         <div class="form-group">
           <label for="zipCOde">ZIP Code:</label>
           <input
-            type="zipCode"
+            type="number"
             name="zipCode"
             class="form-control"
             placeholder="Required, numeric only"
             required
+            min="4;"
           />
         </div>
 
