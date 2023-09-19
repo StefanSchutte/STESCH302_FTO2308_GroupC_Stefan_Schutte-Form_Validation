@@ -2,16 +2,22 @@
   margin: 10px;
   padding: 15px;
   display: flex;
-  align-items: flex-start;
+  align-items: center;
+  text-align: center;
   flex-direction: column;
   width: 300px;
-  gap: 10px;
+}
+label {
+  display: inline-block;
+  width: 90px;
+  text-align: right;
+  margin-right: 5px;
 }
 
 .form-group {
   padding: 8px;
   display: flex;
-  align-items: flex-end;
+
   justify-content: space-between;
   align-items: center;
 }
@@ -21,5 +27,5 @@ input::placeholder {
 }
 .btn {
   background-color: rgb(59, 126, 163);
+  position: absolute;
 }
-/* text overfolow */
